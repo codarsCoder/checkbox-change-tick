@@ -1,0 +1,29 @@
+
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 50px;
+    width: 50px;
+    color:blueviolet;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+input[type="checkbox"]:checked::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+ font-size: 30px;
+}
+label{
+   position: relative;
+   bottom: 48px;
+   left: 60px;
+   font-size: 2rem;
+}
+input[type="checkbox"]:checked ~ label{
+    text-decoration: line-through;
+}
